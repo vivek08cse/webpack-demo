@@ -46,6 +46,7 @@ table {
   border-spacing: 0; }
 
 body {
-  color: red; }
+  color: black;
+  background-color: gainsboro; }
 
 /*# sourceMappingURL=main.css.map*/

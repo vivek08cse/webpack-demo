@@ -65,16 +65,16 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sass_main_scss__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sass_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__sass_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selector__ = __webpack_require__(2);
 
 
-__WEBPACK_IMPORTED_MODULE_1__selector__["a" /* paraSelector */].innerHTML = 'Welcome';
+__webpack_require__(1);
+
+var _selector = __webpack_require__(2);
+
+_selector.paraSelector.innerHTML = 'Welcome';
 alert('Loaded');
 
 /***/ }),
@@ -85,11 +85,15 @@ alert('Loaded');
 
 /***/ }),
 /* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return paraSelector; });
-var paraSelector = document.getElementById('para-selector');
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var paraSelector = exports.paraSelector = document.getElementById('para-selector');
 alert('Selector loaded');
 
 /***/ })
